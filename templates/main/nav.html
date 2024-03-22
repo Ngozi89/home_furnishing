@@ -19,11 +19,12 @@
                   Shop
               </a>
               <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                  <a href="" class="dropdown-item">Kitchen</a>
-                  <a href="" class="dropdown-item">Light</a>
-                  <a href="" class="dropdown-item">Rugs</a>
-                  <a href="" class="dropdown-item">Childrens Room</a>
-                  <a href="" class="dropdown-item">Canvas</a>
+                  <a href="{% url 'products' %}?category=kitchen" class="dropdown-item">Kitchen</a>
+                  <a href="{% url 'products' %}?category=light" class="dropdown-item">Light</a>
+                  <a href="{% url 'products' %}?category=rugs" class="dropdown-item">Rugs</a>
+                  <a href="{% url 'products' %}?category=childrens_room" class="dropdown-item">Childrens Room</a>
+                  <a href="{% url 'products' %}?category=canvas" class="dropdown-item">Canvas</a>
+                  <a href="{% url 'products' %}?category=kitchen,light,rugs,childrens_room,canvas" class="dropdown-item">See All</a>
               </div>
           </li>
             </li>
@@ -44,10 +45,10 @@
                 Living Room
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="#" class="dropdown-item">Soffa</a>
-                <a href="" class="dropdown-item">Tv bank</a>
-                <a href="" class="dropdown-item">Soffa Table</a>
-                <a href="" class="dropdown-item">All Sitting Room Deco</a>
+                <a href="{% url 'products' %}?category=sofa" class="dropdown-item">Sofa</a>
+                <a href="{% url 'products' %}?category=tv_bank" class="dropdown-item">Tv bank</a>
+                <a href="{% url 'products' %}?category=sofa_table" class="dropdown-item">Soffa Table</a>
+                <a href="{% url 'products' %}?category=sofa,tv_bank,sofa_table" class="dropdown-item">All Sitting Room Deco</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -55,11 +56,11 @@
               Bed Room
           </a>
           <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-              <a href="" class="dropdown-item">Bed</a>
-              <a href="" class="dropdown-item">Madress</a>
-              <a href="" class="dropdown-item">Wardrobe</a>
-              <a href="" class="dropdown-item">Makeup Table</a>
-              <a href="" class="dropdown-item">All Bedroom Deco</a>
+              <a href="{% url 'products' %}?category=bed" class="dropdown-item">Bed</a>
+              <a href="{% url 'products' %}?category=madrass" class="dropdown-item">Madress</a>
+              <a href="{% url 'products' %}?category=wardrobe" class="dropdown-item">Wardrobe</a>
+              <a href="{% url 'products' %}?category=make_table" class="dropdown-item">Makeup Table</a>
+              <a href="{% url 'products' %}?category=bed,madrass,wardrobe,makeup_table" class="dropdown-item">All Bedroom Deco</a>
           </div>
       </li>
 
@@ -68,15 +69,15 @@
             Special Offers
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-            <a href="" class="dropdown-item">New Arrivals</a>
-            <a href="" class="dropdown-item">Deals</a>
-            <a href="" class="dropdown-item">Clearance</a>
-            <a href="" class="dropdown-item">All Specials</a>
+            <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+            <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+            <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+            <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
         </div>
     </li>
 
   </ul>
-          <form action="" class="form-inline my-2 my-lg-0">
+          <form method="GET" action="{% url 'products' %}" class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2 w-75" type="search" name="q" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-none my-2 my-sm-0" aria-label="search" type="submit"><i
                 class="fa fa-search"></i></button>
