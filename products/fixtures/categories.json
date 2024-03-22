@@ -1,0 +1,106 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "soffa",
+        "friendly_name": "Soffa"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "tv_bank",
+        "friendly_name": "Tv Bank"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "soffa_table",
+        "friendly_name": "Soffa Table"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "bed_madress",
+        "friendly_name": "Bed & Madress"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "wardrobe",
+        "friendly_name": "Wardrobe"
+      }
+    },
+  {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "makeup_table",
+        "friendly_name": "Makeup Table"
+      }
+    },
+  {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    },
+  {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "sales",
+        "friendly_name": "Sales"
+      }
+    },
+  {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+      }
+    },
+  {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "kitchen_dinning",
+        "friendly_name": "Kitchen & Dinning"
+      }
+    },
+  {
+      "pk": 11,
+      "model": "products.category",
+      "fields": {
+        "name": "light",
+        "friendly_name": "Light"
+      }
+    },
+  {
+      "pk": 12,
+      "model": "products.category",
+      "fields": {
+        "name": "rugs",
+        "friendly_name": "Rugs"
+      }
+    },
+  {
+      "pk": 13,
+      "model": "products.category",
+      "fields": {
+        "name": "kids_room",
+        "friendly_name": "Kids Room"
+      }
+    }
+  ]

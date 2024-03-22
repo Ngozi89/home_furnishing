@@ -1,0 +1,98 @@
+[
+    {
+      "pk": 1,
+      "model": "products.color",
+      "fields": {
+        "name": "white",
+        "friendly_name": "White"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.color",
+      "fields": {
+        "name": "gray",
+        "friendly_name": "Gray"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.color",
+      "fields": {
+        "name": "black",
+        "friendly_name": "Black"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.color",
+      "fields": {
+        "name": "pink",
+        "friendly_name": "Pink"
+      }
+    },
+  {
+    "pk": 5,
+    "model": "products.color",
+    "fields": {
+      "name": "brown",
+     "friendly_name": "Brown"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.color",
+    "fields": {
+      "name": "red",
+      "friendly_name": "Red"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.color",
+    "fields": {
+      "name": "nature",
+      "friendly_name": "Nature"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.color",
+    "fields": {
+      "name": "beige",
+      "friendly_name": "Beige"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.color",
+    "fields": {
+      "name": "green",
+      "friendly_name": "Green"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.color",
+    "fields": {
+      "name": "dark_blue",
+      "friendly_name": "Dark Blue"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.color",
+    "fields": {
+      "name": "turquoise",
+      "friendly_name": "Turquoise"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.color",
+    "fields": {
+      "name": "muliticolored",
+      "friendly_name": "Muliticolored"
+    }
+  }
+  ]
