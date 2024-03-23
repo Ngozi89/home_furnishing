@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     'home',
     'products',
+    'cart',
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.contexts.cart_contents',
             ],
         },
     },
@@ -99,6 +101,9 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'home_furnishing.wsgi.application'
+
+FREE_SHIPPING_THRESHOLD = 2000
+STANDARD_SHIPPING_PERCENTAGE = 10
 
 
 # Database

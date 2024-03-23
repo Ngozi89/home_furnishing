@@ -98,6 +98,7 @@ body {
     width: 30vh;
 }
 
+/* Spacify each product for the order */
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -123,6 +124,31 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
+}
+
+/* Add to bag */
+.btn-black {
+    background-color: var(--red);
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid rgb(141, 38, 38);
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
+
+/* Rating */
+.fa-star {
+    color: rgba(228, 224, 18, 0.897);
 }
 
 @media (min-width: 1200px) {
