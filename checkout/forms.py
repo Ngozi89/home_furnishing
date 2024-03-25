@@ -5,10 +5,10 @@ from .models import Order
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('first_name', 'last_name', 'email', 'phone_number',
+        fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',
                   'town_or_city', 'postcode', 'country',
-                  'county')
+                  'county',)
 
     def __init__(self, *args, **kwargs):
         """
@@ -17,38 +17,23 @@ class OrderForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'first_name': 'John',
-            'last_name': 'Doe',
-            'email': 'your@email.com',
-            'phone_number': '+353 123 456 7890',
-            'postcode': 'T12 F3TK',
-            'town_or_city': 'Your town or city',
-            'street_address1': 'Street Address 1',
-            'street_address2': 'Street Address 2',
-            'county': 'County, State or Locality',
-            'country': 'Ireland'
-        }
-
-        labels = {
-            'first_name': 'First Name',
-            'last_name': 'Last Name',
+            'full_name': 'Full Name',
             'email': 'Email Address',
             'phone_number': 'Phone Number',
-            'postcode': 'Postcode',
+            'country': 'Country',
+            'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
-            'county': 'County, State or Locality',
-            'country': 'Country'
+            'county': 'County',
         }
 
-        self.fields['first_name'].widget.attrs['autofocus'] = True
+        self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if field != 'country':
+            if self.fields[field].required:
+                placeholder = f'{placeholders[field]} *'
+            else:
                 placeholder = placeholders[field]
-                self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
-
-            if field in labels:
-                self.fields[field].label = labels[field]
