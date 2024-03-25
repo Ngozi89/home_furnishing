@@ -1,4 +1,5 @@
 import uuid
+
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
@@ -43,6 +44,7 @@ class Order(models.Model):
         self.grand_total = self.order_total + self.shipping_cost
         self.save()
 
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to add the order
@@ -54,16 +56,11 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_number
-    
+
+
 class OrderLineItem(models.Model):
-    order = models.ForeignKey(
-        Order,
-        null=False,
-        blank=False,
-        on_delete=models.CASCADE,
-        related_name='line_items')
-    product = models.ForeignKey(
-        Product, null=False, blank=False, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
+    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     line_item_total = models.DecimalField(
         max_digits=6, decimal_places=2, null=False, editable=False)
