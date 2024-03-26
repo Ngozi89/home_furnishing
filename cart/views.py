@@ -61,16 +61,14 @@ def remove_item_from_cart(request, item_id):
     """
     Removes the item from the shopping cart
     """
-    try:
-        product = get_object_or_404(Product, pk=item_id)
-        cart = request.session.get('cart', {})
-        cart.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your cart')
-
-        request.session['cart'] = cart
-
-        return redirect(reverse('view_cart'))
-
-    except Exception as e:
-        messages.error(request, f'Error removing item: {e}')
-        return HttpResponse(status=500)
+    cart = request.session.get('cart', {})
+    product = get_object_or_404(Producct, pk=item_id)
+    if item_id in cart.keys():
+        try:
+            cart.pop(item_id)
+            messages.success(request, f'Removed {product.name} from your cart')
+            request.session['cart'] = cart
+            return redirect(reverse('view-cart'))
+        except Exception as e:
+            messages.error(request, f'An error occured {e}')
+            return HttpResponse(status=500)
