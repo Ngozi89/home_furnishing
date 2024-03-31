@@ -101,7 +101,7 @@
           
               <hr class="border-primary py-1 w-50">
               {% endif %}
-              <a href="" class="dropdown-item py-3">My Profile</a>
+              <a href="{% url 'proflies' %}" class="dropdown-item py-3">My Profile</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item py-3">Logout</a>
               {% else %}
               <a href="{% url 'account_signup' %}" class="dropdown-item py-3">Register</a>
