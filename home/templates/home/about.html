@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+About Us
+{% endblock title %}
+{% block content %}
+<section class="about-us">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h3>About us</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="{% static 'images/aboutus1.jpg' %}" alt="Image of Hone Furniture" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p>The online furniture store!
+                            With watchwords such as quality, affordability and first-class service, Home Furnishing wants to be the obvious choice for online furniture shopping. 
+                            We offer a large, hand-picked range that includes both outdoor and indoor furniture based on our basic idea of providing personal and functional interior design for the entire home. 
+                            <br>
+                            At Home Furnishing we love design and we are constantly on the lookout for new trends, but we are just as proud to be able to offer timeless furniture classics.
+                            
+                            Vision
+                            Our goal has always been to become the best furniture store online. We want to become that by offering the widest range and the best service in the industry. 
+                            We want every customer, regardless of taste and budget, to be able to find the furniture they are looking for with us. 
+                            <br>
+                            With an assortment that is continuously expanded, you will constantly find new products on our website and we regularly have campaigns that give our customers the opportunity to buy furniture at extra favorable prices.
+                            <br>
+                            History
+                            Home Furnishing was founded in 2024 as one School Project on Building E-commerce store.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                        <h4 class="fw-bold mb-4">Home Furnishing</h4>
+                        <h5 class="fw-bold mb-4">Contact:</h5>
+                        <p class="mb-0"><i class="fas fa-home text-orange"></i>
+                            13 Imaginary Street,
+                            Stockholm Sweden
+                        </p>
+                        <p class="mb-0"><i class="fas fa-phone me-3 text-orange"></i>Phone: 07 12345678</p>
+                        <p><i class="fas fa-envelope me-3 text-orange"></i>Email: homefurnishing@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

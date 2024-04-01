@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact us{% endblock %}
+
+{% block content %}
+
+<section class="about-us">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Customer Support</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h3>Get In Touch With Us</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="{% static 'images/service.jpg' %}" alt="Customer Service" class="img-fluid">
+                    </div>
+
+                    <div class="col-12 col-md-6 service">
+                        <h1 class="h1 mt-3">Contact Customer Service</h1>
+                      <p class="lead">You can contact us by emailing <strong><a class="text-underline text-secondary"
+                        href="mailto:contact@homefuenishing.com">contact@homefurnishing.com</a></strong>
+                       or call us <strong>07 123 45 678</strong> and we will reply as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
