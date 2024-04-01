@@ -30,6 +30,11 @@ body {
 
 }
 
+.btn-primary {
+    background-color: rgb(226, 38, 38);
+    font-size: 20px;
+}
+
 #account {
     color: black;
 }
@@ -311,8 +316,14 @@ input[name='q']::placeholder {
     margin-top: 80px;
 }
 
+
 @media (min-width: 1200px) {
     .stripe-img{
         margin-left: 180Px;
     }
+
+    
+    .hero-message {
+       margin-left: 250px;
+   }
 }
