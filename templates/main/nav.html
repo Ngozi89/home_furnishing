@@ -96,10 +96,7 @@
             <div class="dropdown-menu py-0 border-0 rounded-lg bg-light shadow-lg" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-              <a href="" class="dropdown-item py-3">Admin</a>
-              <a href="" class="dropdown-item py-3">Add Item</a>
-          
-              <hr class="border-primary py-1 w-50">
+              <a href="{% url 'add_product' %}" class="dropdown-item py-3">Product Admin</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item py-3">My Profile</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item py-3">Logout</a>
