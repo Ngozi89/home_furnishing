@@ -3,8 +3,10 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.db.models import Avg, Count
 
 from .models import Product, Category
+from review.models import Review
 from .forms import ProductForm
 
 # Create your views here.
@@ -12,7 +14,10 @@ from .forms import ProductForm
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    products = Product.objects.all().annotate(
+        reviews_average=Avg('review__rating'),
+        reviews_count=Count('review'))
+
     query = None
     categories = None
     sort = None
