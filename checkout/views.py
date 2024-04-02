@@ -56,6 +56,7 @@ def checkout(request):
             order.stripe_pid = pid
             order.original_cart = json.dumps(cart)
             order.save()
+            print("Order saved successfully:", order.order_number)
             for item_id, quantity in cart.items():
                 try:
                     product = Product.objects.get(pk=item_id)
@@ -75,6 +76,8 @@ def checkout(request):
                     return redirect(reverse('cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
+            print("Order Total in the view :", order.order_total)  # Add this line for debugging
+            print("Grand Total in the view :", order.grand_total)  
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \

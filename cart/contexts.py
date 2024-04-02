@@ -30,6 +30,10 @@ def cart_contents(request):
     
     grand_total = shipping + total
     
+    # Adding print statements for debugging
+    print("Total in cart_contents:", total)
+    print("Grand Total in cart_contents:", grand_total)
+    
     context = {
         'cart_items': cart_items,
         'total': total,
