@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
+sitemap: https://home-furnishing-f3c7929d455e.herokuapp.com/sitemap.xml
