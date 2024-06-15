@@ -283,6 +283,26 @@ User Acceptance Criteria based on the user stories:
   > - Confirm with the user deletion of the products.
   > - Provide aesthetically pleasing user experience.
 
+### Profile Page
+
+![](readme/my-profile.png)
+
+- Allows user to see their registered account and past orders.
+
+    #### User Goal
+
+    > - Sign in.
+    > - Save shipping info
+    > - See orders
+
+    #### Website Goal
+
+    > - Allow the user to login and see their details easily.
+    > - Allow user to see their previous order
+    > - Provide aesthetically pleasing user experience.
+![](readme/my-order.png)
+
+
 ### Footer ([uac 11](#uac11), [uac 12](#uac12), [uac 20](#uac20))
 
 ![](readme/footer.png)
@@ -350,7 +370,10 @@ The navbar is a key feature of the website, located at the top of the page. It a
 
 ## Admin ([uac 5](#uac5))
 
-The website includes a fully customised Admin panel. The admin panel allows for the management and editing of the application's data through a web interface. This interface is only accessible to users with administrator or superuser privileges. The admin panel provides CRUD functionalities. It allows for the management of the products, users, groups, and permissions.
+The website includes a fully customised Admin panel. The admin panel allows for the management and editing of the application's data through a web interface. This interface is only accessible to users with administrator or superuser privileges. The admin panel provides CRUD functionalities. It allows for the management of the products, users, groups, orders and permissions.
+![](readme/add-product-admin.png)
+![](readme/checkout-oders-admin-page.png)
+
 
 ## JS Bundling
 
@@ -364,9 +387,7 @@ In the project before bundling the code was compiled with Babel, a JavaScript tr
 
 2. Allow users leave a reveal on product they purchased.
 
-3. Buttons to share posts on social media.
-Buttons that provide the ability for users to share products on social media allow for an increase in the reach and visibility of the website. This can lead to more traffic to the website and ultimately more purchase. The buttons make it easy for users to share content with their friends and followers on social media.
-When content is shared on social media, it includes a link back to the website. This can help with branding, as it increases the visibility of the website and its content, increasing positive impact.
+3. Allow users to register their returns
 
 # Testing
 
