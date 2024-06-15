@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=200)
@@ -12,7 +13,7 @@ class Category(models.Model):
         return self.friendly_name
 
     class Meta:
-        verbose_name_plural = "Categories"    
+        verbose_name_plural = "Categories" 
 
 
 class Color(models.Model):
@@ -24,6 +25,7 @@ class Color(models.Model):
 
     def get_friendly_name(self):
         return self.friendly_name
+
 
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)

@@ -13,6 +13,7 @@ from cart.contexts import cart_contents
 import stripe
 import json
 
+
 # Create your views here.
 @require_POST
 def cache_checkout_data(request):
@@ -77,7 +78,7 @@ def checkout(request):
 
             request.session['save_info'] = 'save-info' in request.POST
             print("Order Total in the view :", order.order_total)  # Add this line for debugging
-            print("Grand Total in the view :", order.grand_total)  
+            print("Grand Total in the view :", order.grand_total)
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
@@ -115,7 +116,6 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \

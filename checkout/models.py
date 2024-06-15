@@ -9,6 +9,7 @@ from django_countries.fields import CountryField
 from products.models import Product
 from profiles.models import UserProfile
 
+
 # Create your models here.
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
@@ -30,28 +31,26 @@ class Order(models.Model):
     original_cart = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
 
-    
     def _generate_order_number(self):
         """
-        Generate a random, unique order number using UUID 
+        Generate a random, unique order number using UUID
         """
         return uuid.uuid4().hex.upper()
 
      
     def update_total(self):
-         """
-         Update grand total each time a line item is added,
-         accounting for shipping costs.
-         """
-         self.order_total = self.lineitems.aggregate(Sum('line_item_total'))['line_item_total__sum'] or 0
-         if self.order_total < settings.FREE_SHIPPING_THRESHOLD:
-             self.shipping_cost = self.order_total * settings.STANDARD_SHIPPING_PERCENTAGE / 100
-         else:
-             self.shipping_cost = 0
+        """
+        Update grand total each time a line item is added,
+        accounting for shipping costs.
+        """
+        self.order_total = self.lineitems.aggregate(Sum('line_item_total'))['line_item_total__sum'] or 0
+        if self.order_total < settings.FREE_SHIPPING_THRESHOLD:
+            self.shipping_cost = self.order_total * settings.STANDARD_SHIPPING_PERCENTAGE / 100
+        else:
+            self.shipping_cost = 0
 
-         self.grand_total = self.order_total + self.shipping_cost
-         self.save()
-
+        self.grand_total = self.order_total + self.shipping_cost
+        self.save()
 
     def save(self, *args, **kwargs):
         """

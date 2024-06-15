@@ -1,7 +1,7 @@
 # Home Furnishing Website (Milestone Project 5)
-![mockup](readme/)
+![mockup](readme/am-i-responsive.png)
 
-[Home Furnishing](https://home-furnishing-f3c7929d455e.herokuapp.com/) is an e-commerce store for home furnitures. At Home Furnishing you will find brands for the modern home decoration from the comfort of your home.
+[Home Furnishing](https://home-furnishing-f3c7929d455e.herokuapp.com/) is an e-commerce store that sell home furnitures. At Home Furnishing you will find brand new modern home furnitures and decoration from the comfort of your home. We offer a large, hand-picked range of indoor furnitures based on our basic idea of providing personal and functional interior design for the entire home
 
 ## Table of contents
 
@@ -60,7 +60,7 @@ Home Furnishing website is built using Django framework, which provides the back
 Home Furnishing is a database-backed Django app for E-commerce shop. The website is created with Design Thinking and Agile approch putting myself in users position.
 User story was created as a guideline in adding the website functionality
 
-The website provides all the essential features, such as creating a personal account, searching and filtering products, the ability to add, update and delete product, selecting product to add to shopping bag, checkout, payment, email confirmation.
+The website provides all the essential features, such as creating a personal account, searching and filtering products, the ability to add, update and delete product, selecting product to add to shopping bag, checkout, payment, email confirmation, signing up for newletters
 
 The website was developed as a Milestone Project#5 for the Code Institute's Full Stack Developer course.
 
@@ -70,7 +70,7 @@ The website was developed as a Milestone Project#5 for the Code Institute's Full
 
 Target audiences:
 
-- Men and women, young and old (U)
+- Men and women, young and old
 
 ### As a **first time user**
 
@@ -95,11 +95,11 @@ Target audiences:
 -
 - I want to be able to access the navbar.
 -
-- I want see new offers and new arrivals
+- I want to see new offers and see new arrivals
 -
 - I want to receive special offers
 
-- I want to be able recover my password in case I lost it.
+- I want to be able to recover my password in case I lost it.
 
 - I want to be able to reset my password if I forget it.
 
@@ -107,43 +107,53 @@ Target audiences:
 
 User Acceptance Criteria based on the user stories:
 
-<span id="uac1">1.</span> The website should be fully responsive and accessible on any device, including desktop, tablet, and mobile.
+<span id="uac1">1.</span> The website should be fully responsive and accessible on any device, including desktop, tablet, and mobile. - <https://ui.dev/amiresponsive?url=https://8000-ngozi89-homefurnishing-q2k5fd2r2y2.ws.codeinstitute-ide.net/>
+![](readme/am-i-responsive.png)
 
 <span id="uac2">2.</span> The website should have a clear and concise homepage that display products.
+![](readme/products.png)
 
 <span id="uac3">3.</span> The website should have a clear and intuitive navigation menu that allows users to easily find and access products.
+![](readme/products-navigation.png)
+
 
 <span id="uac5">4.</span> The website should have a registration form that allows users to create a personal account.
+![](readme/registration-form.png)
 
 <span id="uac31">5.</span> The website should have admin panel.
+![](readme/site-admin-page.png)
 
 <span id="uac7">6.</span> The registration process should be fast and easy, but also secure, using encryption and other security measures.
 
-<span id="uac7">7.</span> Each product should have a link that allows users to view it on a separate page, where they can see all the details and information about the product.
+<span id="uac7">7.</span> Each product should have a link that allows users to view it separatly to see all the details and information about the product.
 
 <span id="uac8">8.</span> The website should allows registered users to login and logout.
+![](readme/signin.png)
 
 <span id="uac9">9.</span> Each product should have name, prize, details, image, rating if it esist
+![](readme/individual-product.png)
 
-<span id="uac10">10.</span> Product with size should have size selection.
-
-<span id="uac11">11.</span> The website should have a user profile to allow users see their profile
+<span id="uac11">10.</span> The website should have a user profile to allow users see their profile
+![](readme/user-profile.png)
 
 <span id="uac12">12.</span> The website should have links to its social media pages, such as Facebook, Twitter, Instagram, etc.
 
 <span id="uac13">13.</span> The website should have security measures in place to protect user data, such as encryption and secure servers.
 
 <span id="uac14">14.</span> The website should have search engine so users can search for a pertaicular product.
+ have a password reset feature that allows registered users to reset their password in case they forget it.
+![](readme/password-reset.png)
+<span id="uac15">15.</span> The website should allow admins to edit and delete products, if need be.
+![](readme/edit-product.png)
 
-<span id="uac15">15.</span> The website should allow admins to edit and delete tproducts, if need be.
-
-<span id="uac16">16.</span> The website should have a password reset feature that allows registered users to reset their password in case they forget it.
+<span id="uac16">16.</span> The website should
 
 <span id="uac17">17.</span> The website should provide feedback when a user make a purchase.
+![](readme/success-order-feedback.png)
 
 ### Home Page
 
-![](readme/home-page.png)
+![](readme/homepage.png)
 
 - Displays the main purpose of the site.
 - Addresses questions and doubts the first-time users might have.
@@ -166,7 +176,7 @@ User Acceptance Criteria based on the user stories:
 
 ### My account Page
 
-![](readme/signup.png)
+![](readme/registration-form.png)
 
 - Allows user to sign up/signin.
 
@@ -194,9 +204,9 @@ User Acceptance Criteria based on the user stories:
   > - Allow the user to sign in easily.
   > - Provide aesthetically pleasing user experience.
 
-### Posts Page
+### Product Page
 
-![](readme/home-page.png)
+![](readme/products.png)
 
 - Shows products.
 - Allows users to easily find and add item to bag.
@@ -217,12 +227,11 @@ User Acceptance Criteria based on the user stories:
 
 ### Product Detail Page
 
-![](readme/details.png)
+![](readme/individual-product.png)
 
-- Shows a post in detail including an image.
-- Allows to see select size if it has sizes.
+- Shows a product in detail including an image.
+- Allows user to choose quantity.
 - Allows products to be added to bag.
-- Allows see details of the product
 - Allows you to manage the products if you are the admin
 - Available only for authenticated users.
 
@@ -230,6 +239,7 @@ User Acceptance Criteria based on the user stories:
 
   > - See a product in detail.
   > - See rating.
+  > - Add product to bag
 
 - #### Website Goal
 
@@ -237,9 +247,9 @@ User Acceptance Criteria based on the user stories:
   > - Allow the user to select product .
   > - Provide aesthetically pleasing user experience.
 
-### Create/Update delete Page
+### Create/Update/delete Page
 
-![](readme/create-.png)
+![](readme/edit-product.png)
 
 - Creates a new product.
 - Allows updating an existing product.
@@ -258,9 +268,10 @@ User Acceptance Criteria based on the user stories:
 
 ### Delete products Page
 
-![](readme/delete-.png)
+![](readme/delete-product.png)
 
 - Confirms if the user wants to delete their product.
+- Confirms when user delete product
 - Available only for authenticated users.
 
 #### User Goal
@@ -274,7 +285,8 @@ User Acceptance Criteria based on the user stories:
 
 ### Footer ([uac 11](#uac11), [uac 12](#uac12), [uac 20](#uac20))
 
-![](readme/.png)
+![](readme/footer.png)
+- The website's footer is designed to provide users with useful such as privacy policy, customer support, about page which are important for users to be aware of as well social media link for users to follow.
 
 # Development Plan
 
@@ -289,8 +301,6 @@ The development of the website has followed an Agile methodology, using GitHub's
 
 ![](readme/user-story.png)
 
-![](readme/user-stories1.png)
-
 # Design
 
 ## Design
@@ -298,8 +308,6 @@ The development of the website has followed an Agile methodology, using GitHub's
 The website is meant to have a simple layout and a clean design. The home page is aimed at giving a professional and informative impression.
 
 ### Colour Scheme
-
-![Palette](readme/color.jpg)
 
 The colour scheme is simply black and white to create a visually appealing and cohesive design that is easily recognizable as being associated to shopping websites.
 
@@ -327,7 +335,7 @@ The website also provides a password reset feature, which is an important securi
 
 ## Responsive ([uac 1](#uac1))
 
-Befit website is designed with flexibility and aesthetic appeal in mind, ensuring that it is responsive and visually pleasing on all screen sizes and resolutions, starting at 350px.
+The website is designed with flexibility and aesthetic appeal in mind, ensuring that it is responsive and visually pleasing on all screen sizes and resolutions, starting at 350px.
 Responsiveness was achieved by utilizing Bootstrap. This allowed for the rearrangement of page components to optimize the user experience on different screen sizes. Breakpoints were chosen based on typical device screen sizes and the goal of providing the best possible presentation of content for all screens. Breakpoints are not strictly consistent (\*particularly for smaller screens) but it is done intentionally to provide a better presentation of the content for all screens.
 
 ## Accessibility
@@ -342,8 +350,6 @@ The navbar is a key feature of the website, located at the top of the page. It a
 
 ## Admin ([uac 5](#uac5))
 
-![](readme/admin.png)
-
 The website includes a fully customised Admin panel. The admin panel allows for the management and editing of the application's data through a web interface. This interface is only accessible to users with administrator or superuser privileges. The admin panel provides CRUD functionalities. It allows for the management of the products, users, groups, and permissions.
 
 ## JS Bundling
@@ -356,11 +362,9 @@ In the project before bundling the code was compiled with Babel, a JavaScript tr
 
 1. Allow users to save product and make purchase later
 
-2. Social media links for users to follow and see more deals
+2. Allow users leave a reveal on product they purchased.
 
-3. Allow users leave a reveal on product they purchased.
-
-5. Buttons to share posts on social media.
+3. Buttons to share posts on social media.
 Buttons that provide the ability for users to share products on social media allow for an increase in the reach and visibility of the website. This can lead to more traffic to the website and ultimately more purchase. The buttons make it easy for users to share content with their friends and followers on social media.
 When content is shared on social media, it includes a link back to the website. This can help with branding, as it increases the visibility of the website and its content, increasing positive impact.
 
@@ -389,10 +393,11 @@ I have tested this project code by
 - Pasting the code on PEP8 linter and no error found.
 - Tested after deployment on Code Institute Heroku terminal and it run successfully.
 
-![Models.py](readme/test-models.py.png)
-![views.py](readme/tested-views.py.png)
+![Models.py](readme/tested-models.png)
+![views.py](readme/tested-views.png)
 ![urls.py](readme/tested-urls.png)
-![admin.py](readme/tested-admin-file.png)
+![admin.py](readme/tested-admin.png)
+![admin.py](readme/tested-form.png)
 
 ### Landing page
 
