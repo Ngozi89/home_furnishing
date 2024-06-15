@@ -485,5 +485,5 @@ This project was deployed using Code Institute's mock terminal for Heroku and th
 - Choose either automatic deploy or manual. I used manual which is deploy branch.
 - Allow the app to build until it shows successful then click view and it takes you to the deployed link.
 
-# Note
-- I Icouldn't attach photos because the website broke after deployment
+# Credit
+- Code institute boutique edo walkthrough project
