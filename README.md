@@ -388,6 +388,7 @@ In the project before bundling the code was compiled with Babel, a JavaScript tr
 2. Allow users leave a reveal on product they purchased.
 
 3. Allow users to register their returns
+![](readme/to-do-user-story.png)
 
 # Testing
 
@@ -427,6 +428,23 @@ I have tested this project code by
 - Database - <https://elephantsql.com/> was used as external database
 - Heroku PostgreSQL is used to store the blog posts, comments and likes.
 - Cloudinary is used to stor blog's images
+
+## SEO
+- Added keywords on the meta keyword content
+![](readme/seo-keywords.png)
+
+
+## Right Marketing Types for My Business
+- I choose social media marketing for Furniture Hall
+- My social goal is generating leads, driving traffic to my website/online store and getting more followers.
+- In other to achieve this goal I created a Facebook platform to post and boost my products in other to create awareness, and ensuring that my products gets to my target audience.
+- Knowing that there are other furniture stores out there, to beat them in the market I sell more of modern furnitures in affordable price. 
+- Give free shipping on first order and have news letter form where users can register to get weekly updates and possible offers.
+- Boosting my products is the best way to getting to social media audiences and I choose Facebook as my social marketing platform because there's where to find more people.
+![](readme/facebook-page.png)
+![](readme/facebook-page-2.png)
+![](readme/newsletter.png)
+
 
 # Deployment
 
