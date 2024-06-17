@@ -487,3 +487,6 @@ This project was deployed using Code Institute's mock terminal for Heroku and th
 
 # Credit
 - Code institute boutique edo walkthrough project
+
+# Please Note
+- For now, when a user signs up, admin has to verify the new user in the admin panel
