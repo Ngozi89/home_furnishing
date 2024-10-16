@@ -27,7 +27,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ngozi89-homefurnishing-q2k5fd2r2y2.ws.codeinstitute-ide.net', 'home-furnishing-f3c7929d455e.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [
+    '8000-ngozi89-homefurnishing-jmlbo4cbo4f.ws.codeinstitute-ide.net',
+    '8000-ngozi89-homefurnishing-q2k5fd2r2y2.ws.codeinstitute-ide.net',
+    'home-furnishing-f3c7929d455e.herokuapp.com', 
+    'localhost'
+ ]
 
 
 # Application definition
